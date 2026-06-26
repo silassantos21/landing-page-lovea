@@ -6,10 +6,10 @@ import { MapPin, Clock, Star, Heart, Sparkles } from "lucide-react";
 
 const aboutContent = {
   princess: {
-    eyebrow: "LOVEA Princess",
+    eyebrow: "LUMEA Princess",
     title: "Moda infantil com muito amor.",
     paragraphs: [
-      "A linha LOVEA Princess nasceu para celebrar a infância com estilo e delicadeza. Cada peça é pensada para que as meninas se sintam especiais, confortáveis e plenas de personalidade.",
+      "A linha LUMEA Princess nasceu para celebrar a infância com estilo e delicadeza. Cada peça é pensada para que as meninas se sintam especiais, confortáveis e plenas de personalidade.",
       "Roupinhas com detalhes únicos — tule, laços, bordados e estampas exclusivas — que tornam cada momento da infância ainda mais mágico e inesquecível.",
     ],
     highlights: [
@@ -19,10 +19,10 @@ const aboutContent = {
     ],
   },
   babies: {
-    eyebrow: "LOVEA Babies",
+    eyebrow: "LUMEA Babies",
     title: "Suavidade desde o primeiro dia.",
     paragraphs: [
-      "A LOVEA Babies foi criada para acolher os momentos mais preciosos da vida: os primeiros dias, as primeiras descobertas, os primeiros sorridos do seu bebê.",
+      "A LUMEA Babies foi criada para acolher os momentos mais preciosos da vida: os primeiros dias, as primeiras descobertas, os primeiros sorrisos do seu bebê.",
       "Cada roupinha é desenvolvida com tecidos hipoalergênicos e macios, priorizando o conforto e a segurança do seu bebê sem abrir mão da beleza e da delicadeza.",
     ],
     highlights: [
@@ -155,9 +155,9 @@ export default function About() {
                     Endereço
                   </div>
                   <div className="text-sm leading-relaxed" style={{ color: "var(--text-primary)", fontWeight: 300 }}>
-                    Av. Nossa Senhora do Carmo, 1227
+                    Rua Oscar Freire, 987
                     <br />
-                    Sion — Belo Horizonte, MG
+                    Jardins — São Paulo, SP
                   </div>
                 </div>
               </div>
@@ -190,7 +190,7 @@ export default function About() {
             </div>
 
             <a
-              href="https://wa.me/5531985322913"
+              href="https://wa.me/5511987654321"
               target="_blank"
               rel="noopener noreferrer"
               className="theme-btn mt-8 flex items-center justify-center gap-2 py-3.5 rounded-full text-sm font-medium tracking-widest uppercase w-full"

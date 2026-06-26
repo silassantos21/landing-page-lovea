@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import { ShoppingBag, ExternalLink } from "lucide-react";
 
-const WHATSAPP_NUMBER = "5531985322913";
+const WHATSAPP_NUMBER = "5511987654321";
 
 function whatsappLink(productName: string) {
   const msg = encodeURIComponent(`Olá! Vi no site e gostaria de saber mais sobre: ${productName}`);

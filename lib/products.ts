@@ -25,7 +25,7 @@ const princessProducts: Product[] = [
   },
   {
     id: "p3",
-    name: "Sacola Presente LOVEA",
+    name: "Sacola Presente LUMEA",
     category: "Acessórios",
     image: PRINCESS_PATH + "anonyig.io_Instagram_lovea.princess_3793929324966375065_6935682506.jpg",
   },

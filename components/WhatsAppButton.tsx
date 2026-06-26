@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 
 const WHATSAPP_URL =
-  "https://wa.me/5531985322913?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos.";
+  "https://wa.me/5511987654321?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos.";
 
 export default function WhatsAppButton() {
   const [visible, setVisible] = useState(false);

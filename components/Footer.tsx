@@ -3,16 +3,16 @@
 import { useTheme, THEMES, Theme } from "@/contexts/ThemeContext";
 import { Instagram, MessageCircle, MapPin, Phone } from "lucide-react";
 
-const WHATSAPP_NUMBER = "5531985322913";
+const WHATSAPP_NUMBER = "5511987654321";
 
 const instagramLinks: Record<Theme, string> = {
-  princess: "https://www.instagram.com/lovea.princess",
-  babies: "https://www.instagram.com/lovea.babies",
+  princess: "https://www.instagram.com/lumea.princess",
+  babies: "https://www.instagram.com/lumea.babies",
 };
 
 const instagramHandles: Record<Theme, string> = {
-  princess: "@lovea.princess",
-  babies: "@lovea.babies",
+  princess: "@lumea.princess",
+  babies: "@lumea.babies",
 };
 
 export default function Footer() {
@@ -35,20 +35,20 @@ export default function Footer() {
                   display: "block",
                 }}
               >
-                LOVEA
+                LUMEA
               </span>
               <span
                 className="text-xs uppercase tracking-widest"
                 style={{ color: "var(--text-muted)", fontWeight: 300, letterSpacing: "0.15em" }}
               >
-                Moda Feminina & Babies
+                Moda Infantil & Bebê
               </span>
             </div>
             <p
               className="text-sm leading-relaxed max-w-xs"
               style={{ color: "var(--text-secondary)", fontWeight: 300 }}
             >
-              Moda com elegância, afeto e propósito. Em Belo Horizonte desde sempre.
+              Moda com elegância, afeto e propósito. Peças que iluminam cada fase da infância.
             </p>
 
             {/* Social */}
@@ -165,9 +165,9 @@ export default function Footer() {
               <div className="flex gap-3">
                 <MapPin size={15} className="flex-shrink-0 mt-0.5" style={{ color: "var(--accent)" }} />
                 <div className="text-sm leading-relaxed" style={{ color: "var(--text-secondary)", fontWeight: 300 }}>
-                  Av. Nossa Senhora do Carmo, 1227<br />
-                  Sion — Belo Horizonte, MG<br />
-                  CEP 30310-000
+                  Rua Oscar Freire, 987<br />
+                  Jardins — São Paulo, SP<br />
+                  CEP 01426-001
                 </div>
               </div>
               <div className="flex gap-3">
@@ -181,7 +181,7 @@ export default function Footer() {
                   onMouseEnter={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--accent)")}
                   onMouseLeave={(e) => ((e.currentTarget as HTMLElement).style.color = "var(--text-secondary)")}
                 >
-                  (31) 98532-2913
+                  (11) 98765-4321
                 </a>
               </div>
             </div>
@@ -204,10 +204,10 @@ export default function Footer() {
           style={{ borderTop: "1px solid var(--border)" }}
         >
           <p className="text-xs" style={{ color: "var(--text-muted)", fontWeight: 300 }}>
-            © 2025 LOVEA. Todos os direitos reservados.
+            © 2025 LUMEA. Todos os direitos reservados.
           </p>
           <p className="text-xs" style={{ color: "var(--text-muted)", fontWeight: 300 }}>
-            Belo Horizonte, Minas Gerais — Brasil
+            São Paulo — Brasil
           </p>
         </div>
       </div>

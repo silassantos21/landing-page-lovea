@@ -13,8 +13,8 @@ export interface ThemeConfig {
 }
 
 export const THEMES: ThemeConfig[] = [
-  { id: "princess", label: "LOVEA", sublabel: "Princess", curtainColor: "#F2A7C3" },
-  { id: "babies",   label: "LOVEA", sublabel: "Babies",   curtainColor: "#B8D8C8" },
+  { id: "princess", label: "LUMEA", sublabel: "Princess", curtainColor: "#F2A7C3" },
+  { id: "babies",   label: "LUMEA", sublabel: "Babies",   curtainColor: "#B8D8C8" },
 ];
 
 interface ThemeContextValue {

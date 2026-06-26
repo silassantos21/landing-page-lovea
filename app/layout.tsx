@@ -3,12 +3,12 @@ import "./globals.css";
 import { ThemeProvider } from "@/contexts/ThemeContext";
 
 export const metadata: Metadata = {
-  title: "LOVEA — Moda Feminina & Babies | Belo Horizonte",
+  title: "LUMEA — Moda Infantil & Bebê | São Paulo",
   description:
-    "LOVEA: moda feminina premium, LOVEA Princess (moda infantil) e LOVEA Babies. Av. Nossa Senhora do Carmo, 1227 — Sion, Belo Horizonte. Atendimento via WhatsApp.",
+    "LUMEA: moda infantil premium e enxoval de bebê. LUMEA Princess para meninas e LUMEA Babies para recém-nascidos. Rua Oscar Freire, 987 — Jardins, São Paulo. Atendimento via WhatsApp.",
   openGraph: {
-    title: "LOVEA — Moda Feminina & Babies",
-    description: "Elegância e ternura em cada peça. Moda feminina, infantil e enxoval de bebê.",
+    title: "LUMEA — Moda Infantil & Bebê",
+    description: "Elegância e ternura em cada peça. Moda infantil e enxoval de bebê.",
     locale: "pt_BR",
     type: "website",
   },

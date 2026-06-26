@@ -4,10 +4,10 @@ import { useTheme, Theme } from "@/contexts/ThemeContext";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowDown, Sparkles, Heart } from "lucide-react";
 
-const WHATSAPP_NUMBER = "5531985322913";
+const WHATSAPP_NUMBER = "5511987654321";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos.`;
-const IG_PRINCESS = "https://www.instagram.com/lovea.princess";
-const IG_BABIES = "https://www.instagram.com/lovea.babies";
+const IG_PRINCESS = "https://www.instagram.com/lumea.princess";
+const IG_BABIES = "https://www.instagram.com/lumea.babies";
 
 const heroContent: Record<Theme, {
   eyebrow: string;
@@ -26,7 +26,7 @@ const heroContent: Record<Theme, {
     headline: ["Para as", "pequenas princesas."],
     sub: "Roupinhas encantadas para meninas cheias de personalidade. Cada peça é um conto de fadas.",
     cta: "Explorar coleção",
-    ctaSecondary: "@lovea.princess",
+    ctaSecondary: "@lumea.princess",
     ctaSecondaryHref: IG_PRINCESS,
     bgImage: "/assets/produtos/lovea-princess/anonyig.io_Instagram_lovea.princess_3854316831570566061_6935682506.jpg",
     headlineFont: "'Playfair Display', serif",
@@ -38,7 +38,7 @@ const heroContent: Record<Theme, {
     headline: ["Suavidade para", "os primeiros momentos."],
     sub: "Roupinhas delicadas e confortáveis para bebês de 0 a 24 meses. Qualidade que os pais confiam.",
     cta: "Ver produtos",
-    ctaSecondary: "@lovea.babies",
+    ctaSecondary: "@lumea.babies",
     ctaSecondaryHref: IG_BABIES,
     bgImage: "/assets/produtos/lovea-babies/anonyig.io_Instagram_lovea.babies_3576061821155119618_45268260388.jpg",
     headlineFont: "'Montserrat', sans-serif",

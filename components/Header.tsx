@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { useTheme, THEMES, Theme } from "@/contexts/ThemeContext";
 import { Menu, X, ShoppingBag } from "lucide-react";
 
-const WHATSAPP_NUMBER = "5531985322913";
+const WHATSAPP_NUMBER = "5511987654321";
 const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=Olá!%20Vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20produtos.`;
 
 function LoveaLogo({ theme }: { theme: Theme }) {
@@ -21,7 +21,7 @@ function LoveaLogo({ theme }: { theme: Theme }) {
             textTransform: "uppercase",
           }}
         >
-          LOVEA
+          LUMEA
         </span>
         <span
           style={{
@@ -52,7 +52,7 @@ function LoveaLogo({ theme }: { theme: Theme }) {
             textTransform: "uppercase",
           }}
         >
-          LOVEA
+          LUMEA
         </span>
         <span
           style={{
