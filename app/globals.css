@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Dancing+Script:wght@400;600&display=swap');
+
+:root {
+  --font-sans: 'Montserrat', system-ui, sans-serif;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-script: 'Dancing Script', cursive;
+}
+
+/* ==================== PRINCESS THEME ==================== */
+[data-theme="princess"] {
+  --bg-primary: #FFF5F8;
+  --bg-secondary: #FDE8F2;
+  --bg-card: #FFFFFF;
+  --text-primary: #3D1C2E;
+  --text-secondary: #7A4060;
+  --text-muted: #B08090;
+  --accent: #E8648A;
+  --accent-dark: #C0446A;
+  --border: rgba(232,100,138,0.15);
+  --border-hover: rgba(232,100,138,0.4);
+  --btn-bg: #E8648A;
+  --btn-text: #FFFFFF;
+  --btn-hover: #C0446A;
+  --hero-overlay: rgba(61,28,46,0.45);
+  --nav-bg: rgba(255,245,248,0.95);
+  --section-alt: #FEF0F5;
+}
+
+/* ==================== BABIES THEME ==================== */
+[data-theme="babies"] {
+  --bg-primary: #F0F9F5;
+  --bg-secondary: #E8F5EF;
+  --bg-card: #FFFFFF;
+  --text-primary: #2C4A3E;
+  --text-secondary: #4A7A6A;
+  --text-muted: #7DBFB2;
+  --accent: #7DBFB2;
+  --accent-dark: #5A9E91;
+  --border: rgba(125,191,178,0.2);
+  --border-hover: rgba(125,191,178,0.5);
+  --btn-bg: #7DBFB2;
+  --btn-text: #FFFFFF;
+  --btn-hover: #5A9E91;
+  --hero-overlay: rgba(44,74,62,0.5);
+  --nav-bg: rgba(240,249,245,0.95);
+  --section-alt: #E8F5EF;
+}
+
+/* ==================== BASE STYLES ==================== */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  overflow-x: hidden;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 2px;
+}
+
+/* ==================== UTILITY CLASSES ==================== */
+.theme-bg { background-color: var(--bg-primary); }
+.theme-bg-secondary { background-color: var(--bg-secondary); }
+.theme-bg-card { background-color: var(--bg-card); }
+.theme-text { color: var(--text-primary); }
+.theme-text-secondary { color: var(--text-secondary); }
+.theme-text-muted { color: var(--text-muted); }
+.theme-accent { color: var(--accent); }
+.theme-border { border-color: var(--border); }
+.theme-nav { background-color: var(--nav-bg); }
+.theme-section-alt { background-color: var(--section-alt); }
+
+.theme-btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+.theme-btn:hover {
+  background-color: var(--btn-hover);
+  transform: translateY(-1px);
+}
+
+.theme-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+.theme-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-4px);
+}
+
+/* Curtain transition overlay */
+.curtain-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+  transform-origin: left;
+}
