@@ -70,18 +70,12 @@ const babiesProducts: Product[] = [
   },
   {
     id: "b5",
-    name: "Body Manga Longa",
-    category: "Bodies",
-    image: BABIES_PATH + "jackson-kondili-x5VhI538fII-unsplash.jpg",
-  },
-  {
-    id: "b6",
     name: "Kit Enxoval Completo",
     category: "Enxoval",
     image: BABIES_PATH + "marcin-jozwiak-v8m7Dza5a9c-unsplash.jpg",
   },
   {
-    id: "b7",
+    id: "b6",
     name: "Sacola Presente LUMEA",
     category: "Acessórios",
     image: BABIES_PATH + "mediamodifier-VoXqvbLAPjM-unsplash.jpg",
