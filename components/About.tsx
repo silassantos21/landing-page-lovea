@@ -38,7 +38,7 @@ export default function About() {
   const content = aboutContent[theme];
 
   return (
-    <section id="about" className="py-24 theme-bg">
+    <section id="about" className="py-16 lg:py-24 theme-bg">
       <div className="max-w-7xl mx-auto px-6 sm:px-10 lg:px-16">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: Text */}
@@ -125,9 +125,10 @@ export default function About() {
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
+            viewport={{ once: true, amount: 0.1 }}
             transition={{ duration: 0.6 }}
             className="theme-card rounded-3xl p-8 sm:p-10"
+            style={{ boxShadow: "0 4px 32px rgba(0,0,0,0.07)" }}
           >
             <h3
               className="text-lg mb-8 pb-6"

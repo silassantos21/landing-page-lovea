@@ -1,6 +1,6 @@
 "use client";
 
-import { useTheme, Theme } from "@/contexts/ThemeContext";
+import { useTheme, THEMES, Theme } from "@/contexts/ThemeContext";
 import { motion, AnimatePresence } from "framer-motion";
 import { ArrowDown, Sparkles, Heart } from "lucide-react";
 
@@ -53,7 +53,7 @@ function EyebrowIcon({ theme }: { theme: Theme }) {
 }
 
 export default function Hero() {
-  const { theme } = useTheme();
+  const { theme, setTheme, isTransitioning } = useTheme();
   const content = heroContent[theme];
 
   return (
@@ -186,6 +186,40 @@ export default function Hero() {
               >
                 {content.ctaSecondary}
               </a>
+            </motion.div>
+
+            {/* Mobile-only theme switcher */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.6, duration: 0.5 }}
+              className="sm:hidden flex items-center gap-2 mt-8"
+            >
+              <span
+                className="text-xs uppercase"
+                style={{ color: "rgba(255,255,255,0.5)", letterSpacing: "0.15em" }}
+              >
+                Tema:
+              </span>
+              <div className="flex gap-1.5">
+                {THEMES.map((t) => (
+                  <button
+                    key={t.id}
+                    onClick={() => setTheme(t.id as Theme)}
+                    disabled={isTransitioning}
+                    className="px-4 py-1.5 rounded-full text-xs transition-all duration-200 disabled:opacity-50"
+                    style={{
+                      backgroundColor: theme === t.id ? "var(--accent)" : "rgba(255,255,255,0.15)",
+                      color: "#FFFFFF",
+                      fontWeight: theme === t.id ? 500 : 300,
+                      letterSpacing: "0.08em",
+                      backdropFilter: "blur(4px)",
+                    }}
+                  >
+                    {t.sublabel}
+                  </button>
+                ))}
+              </div>
             </motion.div>
           </motion.div>
         </AnimatePresence>
